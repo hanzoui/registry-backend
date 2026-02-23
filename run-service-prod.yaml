@@ -71,7 +71,7 @@ spec:
                   key: "1"
                   name: PROD_NEW_RELIC_LICENSE_KEY
             - name: ID_TOKEN_AUDIENCE
-              value: https://api.comfy.org
+              value: https://api.hanzo.ai
             - name: CLOUD_STORAGE_BUCKET_NAME
               value: comfy-registry
             - name: PUBSUB_TOPIC

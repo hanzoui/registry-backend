@@ -484,7 +484,7 @@ func (s *RegistryService) CreateNodeVersion(
 			SetBucketName(bucketName).
 			SetFilePath(objectPath).
 			SetFileType("zip").
-			// Sample URL: https://storage.googleapis.com/comfy-registry/james-test-publisher/comfyui-inspire-pack/1.0.0/node.zip
+			// Sample URL: https://storage.googleapis.com/comfy-registry/james-test-publisher/hanzo-studio-inspire-pack/1.0.0/node.zip
 			SetFileURL(fmt.Sprintf("https://storage.googleapis.com/%s/%s", bucketName, objectPath)).
 			SaveX(ctx)
 		signedUrl, err := s.storageService.GenerateSignedURL(bucketName, objectPath)
@@ -507,7 +507,7 @@ func (s *RegistryService) CreateNodeVersion(
 
 		message := fmt.Sprintf(
 			"Version %s of node %s was published successfully. Publisher: %s. "+
-				"https://registry.comfy.org/nodes/%s", createdNodeVersion.Version,
+				"https://registry.hanzo.ai/nodes/%s", createdNodeVersion.Version,
 			createdNodeVersion.NodeID, publisherID, nodeID)
 		slackErr := s.slackService.SendRegistryMessageToSlack(message)
 		if slackErr != nil {
@@ -1443,7 +1443,7 @@ func (s *RegistryService) PerformSecurityCheck(
 		}
 		err = s.discordService.SendSecurityCouncilMessage(
 			fmt.Sprintf("Security issues were found in node %s@%s. Status is flagged. "+
-				"Please check it here: https://registry.comfy.org/nodes/%s/versions/%s. \n "+
+				"Please check it here: https://registry.hanzo.ai/nodes/%s/versions/%s. \n "+
 				"Issues are: \n%s", nodeVersion.NodeID, nodeVersion.Version, nodeVersion.NodeID, nodeVersion.Version,
 				prettyIssues), false)
 		if err != nil {

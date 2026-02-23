@@ -24,7 +24,7 @@ module "node_pack_extract_trigger" {
   trigger_name                = "comfy-node-pack-extract-staging"
   topic_name                  = "comfy-registry-event-staging"
   backfill_job_name           = "comfy-node-pack-backfill-staging"
-  registry_backend_url        = "https://stagingapi.comfy.org"
+  registry_backend_url        = "https://stagingapi.hanzo.ai"
 }
 
 module "alert" {

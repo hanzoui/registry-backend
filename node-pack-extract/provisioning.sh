@@ -12,7 +12,7 @@ pip install "numpy<2"
 echo "==========================================="
 echo "=== Downloading the custom node archive ==="
 echo "==========================================="
-cd /opt/ComfyUI/custom_nodes/
+cd /opt/Hanzo Studio/custom_nodes/
 rm -rf "$CUSTOM_NODE_NAME"
 mkdir -p "$CUSTOM_NODE_NAME"
 wget -O "$CUSTOM_NODE_NAME.zip" "$CUSTOM_NODE_URL"

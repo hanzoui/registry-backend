@@ -3,7 +3,7 @@ steps:
     args:
       - "build"
       - "--tag"
-      - "gcr.io/$PROJECT_ID/comfyui-nodepack"
+      - "gcr.io/$PROJECT_ID/hanzo-studio-nodepack"
       - "."
     dir: node-pack-extract
 
@@ -22,7 +22,7 @@ steps:
       - "/workspace:/workspace"
       - "--workdir"
       - "/workspace"
-      - "gcr.io/$PROJECT_ID/comfyui-nodepack"
+      - "gcr.io/$PROJECT_ID/hanzo-studio-nodepack"
       - "$_CUSTOM_NODE_NAME.json"
     timeout: 5400s # 90 minutes
     allowFailure: true
