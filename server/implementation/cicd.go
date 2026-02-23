@@ -30,7 +30,7 @@ func (impl *DripStrictServerImplementation) GetGitcommit(ctx context.Context, re
 		log.Ctx(ctx).Info().Msgf("getting commit data for %s", *request.Params.OperatingSystem)
 	}
 
-	repoName := "comfyanonymous/ComfyUI"
+	repoName := "hanzoai/studio"
 	if request.Params.RepoName != nil {
 		repoName = *request.Params.RepoName
 	}
@@ -154,7 +154,7 @@ func (impl *DripStrictServerImplementation) GetGitcommitsummary(ctx context.Cont
 			WithStorageFile()
 
 		// Apply filters
-		repoName := "comfyanonymous/ComfyUI"
+		repoName := "hanzoai/studio"
 		if request.Params.RepoName != nil {
 			repoName = *request.Params.RepoName
 		}

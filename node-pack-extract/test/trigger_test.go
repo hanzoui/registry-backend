@@ -81,9 +81,9 @@ func TestApply(t *testing.T) {
 		require.NoError(t, err)
 		h := j.GetHttpTarget()
 		require.NotNil(t, h)
-		assert.Equal(t, h.GetUri(), "https://stagingapi.comfy.org/comfy-nodes/backfill?max_node=10")
+		assert.Equal(t, h.GetUri(), "https://stagingapi.hanzo.ai/comfy-nodes/backfill?max_node=10")
 		assert.Equal(t, http.MethodPost, h.GetHttpMethod().String())
-		assert.Equal(t, "https://stagingapi.comfy.org", h.GetOidcToken().GetAudience())
+		assert.Equal(t, "https://stagingapi.hanzo.ai", h.GetOidcToken().GetAudience())
 		assert.Equal(t, serviceAccount, h.GetOidcToken().GetServiceAccountEmail())
 	})
 }

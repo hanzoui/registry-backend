@@ -582,7 +582,7 @@ type PostUploadArtifactJSONBody struct {
 	// BucketName The name of the bucket where the output files are stored
 	BucketName *string `json:"bucket_name,omitempty"`
 
-	// ComfyLogsGcsPath The path to ComfyUI logs. eg. gs://bucket-name/logs
+	// ComfyLogsGcsPath The path to Hanzo Studio logs. eg. gs://bucket-name/logs
 	ComfyLogsGcsPath *string `json:"comfy_logs_gcs_path,omitempty"`
 
 	// ComfyRunFlags The flags used in the comfy run
@@ -793,7 +793,7 @@ type ServerInterface interface {
 	// Security Scan
 	// (GET /security-scan)
 	SecurityScan(ctx echo.Context, params SecurityScanParams) error
-	// Receive artifacts (output files) from the ComfyUI GitHub Action
+	// Receive artifacts (output files) from the Hanzo Studio GitHub Action
 	// (POST /upload-artifact)
 	PostUploadArtifact(ctx echo.Context) error
 	// Get information about the calling user.
@@ -3835,7 +3835,7 @@ type StrictServerInterface interface {
 	// Security Scan
 	// (GET /security-scan)
 	SecurityScan(ctx context.Context, request SecurityScanRequestObject) (SecurityScanResponseObject, error)
-	// Receive artifacts (output files) from the ComfyUI GitHub Action
+	// Receive artifacts (output files) from the Hanzo Studio GitHub Action
 	// (POST /upload-artifact)
 	PostUploadArtifact(ctx context.Context, request PostUploadArtifactRequestObject) (PostUploadArtifactResponseObject, error)
 	// Get information about the calling user.

@@ -54,7 +54,7 @@ variable "backfill_job_max_node" {
 variable "git_repo_uri" {
   type        = string
   description = "Connected git repo containing the cloud build pipeline. See https://cloud.google.com/build/docs/repositories"
-  default     = "https://github.com/Comfy-Org/registry-backend"
+  default     = "https://github.com/hanzoui/registry-backend"
 }
 
 variable "git_repo_branch" {
@@ -66,6 +66,6 @@ variable "git_repo_branch" {
 variable "registry_backend_url" {
   type        = string
   description = "The base url where registry backend can be reached"
-  default     = "https://api.comfy.org"
+  default     = "https://api.hanzo.ai"
 }
 

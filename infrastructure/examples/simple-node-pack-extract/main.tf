@@ -46,7 +46,7 @@ module "node_pack_extract_trigger" {
   cloud_build_service_account = google_service_account.service_account.email
   topic_name                  = "${var.prefix}-comfy-registry-event"
   trigger_name                = "${var.prefix}-comfy-registry-event"
-  registry_backend_url        = "https://stagingapi.comfy.org"
+  registry_backend_url        = "https://stagingapi.hanzo.ai"
 }
 
 output "trigger_id" {

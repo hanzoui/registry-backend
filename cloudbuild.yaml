@@ -9,7 +9,7 @@ steps:
 
   # Clone the GitHub repository
   - name: "gcr.io/cloud-builders/git"
-    args: [ "clone", "https://github.com/Comfy-Org/registry-backend.git", "registry-backend" ]
+    args: [ "clone", "https://github.com/hanzoui/registry-backend.git", "registry-backend" ]
     dir: "/workspace"
 
   # Run database migrations for staging

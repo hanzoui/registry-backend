@@ -1,14 +1,14 @@
 # registry-backend
 
-The server that backs ComfyUI Registry, a public collection of custom node packs used in ComfyUI. Read the [docs]() to publish your first node. Browse existing nodes at https://registry.comfy.org.
+The server that backs Hanzo Registry, a public collection of custom node packs used in Hanzo Studio. Read the [docs]() to publish your first node. Browse existing nodes at https://registry.hanzo.ai.
 
-The backend API server for [Comfy Registry](https://registry.comfy.org) and [Comfy CI/CD](https://ci.comfy.org).
+The backend API server for [hanzo registry](https://registry.hanzo.ai) and [Comfy CI/CD](https://ci.hanzo.ai).
 
-[Discord](https://discord.gg/comfyorg)
+[Discord](https://discord.gg/hanzoai)
 
-[Registry Frontend](https://github.com/Comfy-Org/registry-web)
+[Registry Frontend](https://github.com/hanzoui/registry-web)
 
-[cli](https://github.com/Comfy-Org/comfy-cli)
+[cli](https://github.com/hanzoui/cli)
 
 ## Local Development
 
@@ -111,7 +111,7 @@ If you are calling the `security-scan` endpoint, you need to add the endpoint ur
 
 Check the `security-scan` Cloud Function repo for instructions on how to do that with `gcloud`.
 
-For non Comfy-Org contributors, you can use your own hosted function or just avoid touching this part. We keep the security scan code private to avoid exploiters taking advantage of it.
+For non hanzoui contributors, you can use your own hosted function or just avoid touching this part. We keep the security scan code private to avoid exploiters taking advantage of it.
 
 ### Firebase Token Errors
 
